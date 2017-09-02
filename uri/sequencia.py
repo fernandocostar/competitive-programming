@@ -1,0 +1,11 @@
+j = 1
+i = 0
+while(i <= 2):
+	j += 0.2
+	print("I=%.1f J=%.1f"%(i, j))
+	j += 1
+	print("I=%.1f J=%.1f"%(i, j))
+	j += 1
+	print("I=%.1f J=%.1f"%(i, j))
+	i += 0.2
+	j = 1
