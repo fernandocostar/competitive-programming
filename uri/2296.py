@@ -15,7 +15,6 @@ for _ in range(n):
 	trilhas.append(min(dif, dif2))
 m = trilhas[0]
 im = 1
-print(trilhas)
 for i in range(n):
 	if m > trilhas[i]:
 		im = i+1
