@@ -1,3 +1,4 @@
+#input do uri tá bugado
 n = int(input())
 def solve(n):
 	colunas = [0]*n
@@ -22,4 +23,3 @@ def solve(n):
 			r = -1
 	return r
 print(solve(n))
-#input do uri tá bugado
