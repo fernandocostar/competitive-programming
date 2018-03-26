@@ -2,9 +2,13 @@ def checkAdjacent(mat, x, y):
 	cont = 0
 	xc = [1, 1, 1, 0, 0, -1, -1, -1]
 	yc = [0, 1, -1, 1, -1, 1, 0, -1]
+	ystep = 0
+	xstep = 0
 	for i in range(8):
+		ystep = y+yc[i]
+		xstep = x+xc[i]
 		try:
-			if mat[y+yc[i]][x+xc[i]] == "*":
+			if mat[ystep][xstep] == "*" and xstep >= 0 and ystep >= 0:
 				cont += 1
 		except IndexError:
 			pass
